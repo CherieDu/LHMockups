@@ -15,3 +15,6 @@ def registration_high(request):
 def registration_mixed(request):
     html = "registration-mixed.html"
     return render(request, html, {})
+def preference_panel(request):
+    html = "preference-panel.html"
+    return render(request, html, {})
