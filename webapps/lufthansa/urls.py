@@ -8,5 +8,7 @@ urlpatterns = patterns('',
     url(r'^registration_high', 'lufthansa.views.registration_high', name='registration_high'),
     url(r'^registration_mixed', 'lufthansa.views.registration_mixed', name='registration_mixed'),
     url(r'^preference_panel', 'lufthansa.views.preference_panel', name='preference_panel'),
+    url(r'^permission_preference_panel', 'lufthansa.views.permission_preference_panel', name='permission_preference_panel'),
+    # url(r'^tmp', 'lufthansa.views.tmp', name='tmp'),
 
 )

@@ -1,192 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'basePreference.html' %}
+{% block title %}
+    <title>Lufthansa Preference Panel</title>
+{% endblock %}
+
 {% block main%}
 <div class="container bs-docs-container">
   <div class = "row">
 
-    <div class = "col-md-9" role = "main">
+    <div class = "col-lg-9" role = "main">
       <div class="bs-docs-section">
         <h2>
-          Customize your Lufthansa services
+          Customize your Lufthansa services by set up your preference.
         </h2>
-        <p>
-          As a Lufthansa ID user, there are lots of benefits available to you. Could you give Lufthansa your permissions to use personal data and communicate offers, so Lufthansa is able to bring more benefits to you. 
-        </p>
-        <h3 id = "benefits-and-permissions">Benefits and Permissions</h3>
-        <table class="table table-striped table-hover" data-click-to-select="true">
-          <thead>
-            <tr>
 
-              <th data-field="state" data-checkbox="true">
-              <div class = "th-inner">
-                <input name="btSelectAll" type="checkbox">
-              </div>
-                
-              </th>
-              <th data-field="services"><h4><b>Lufthansa services</b></h4></th>
-              <th data-field="permissions"><h4><b>Permissions required</b></h4></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" class = "bs-checkbox">
-              <input type = "checkbox">
-                <!-- <div class="checkbox">
-                  <label>
-                    <input type="checkbox">
-
-                  </label>
-                </div> -->
-              
-              </th>
-              <td class = "col-md-6">
-                <h5 id = "personalized-email"><b>Personalized Email</b></h5>
-                <p>
-                 Receive the Lufthansa newsletter and other commercial Email, such as: the latest bargain flight offers, insider tips on the best travel destinations, information about Lufthansa and Miles & More news. You can manage Emails frequency and topics on this page.
-                </p>
-              </td>
-              <td class = "col-md-6">
-                <h5> &nbsp</h5>
-                <div>
-                  <ul>
-                    <li>Web tracking of click behaviour</li>
-                    <li>Tracking of Email behavior</li>
-                    <li>Current booking and booking history tracking</li>
-                    <li>Ancillary products purchase history</li>
-                    <li>To analyze, save and use tracked and personal date</li>
-
-                  </ul>  
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox">
-                  </label>
-                </div>
-              </th>
-              <td class = "col-md-6">
-                <h5 id = "personalized-cockpit-booking"><b>Personalized Cockpit Booking</b></h5>
-                <p>
-                 You can book cockpit right after your booking process. Based on your previous behavior and preferences, Lufthansa provides more relevent offers to you. 
-                </p>
-              </td>
-              <td class = "col-md-6">
-              <h5> &nbsp</h5>
-                <div>
-                  <ul>
-                    <li>Web tracking of click behaviour</li>
-                    <li>Current booking and booking history tracking</li>
-                    <li>Ancillary products purchase history</li>
-                    <li>To analyze, save and use tracked and personal date</li>
-                  </ul>  
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox">
-                  </label>
-                </div>
-              </th>
-              <td class = "col-md-6">
-                <h5 id = "personalized-homepage"><b>Personalized Homepage</b></h5>
-                <p>
-                 Curstomized your homepage based on your profile. Additionaly, Lufthansa provides personalized product offers for you. For instance: on the homepage, the flight information will be autofilled based on your preferences. 
-                </p>
-              </td>
-              <td class = "col-md-6">
-              <h5> &nbsp</h5>
-                <div>
-                  <ul>
-                    <li>Web tracking of click behaviour</li>
-                    <li>Current booking and booking history tracking</li>
-                    <li>Location tracking (IP enabled or in -app)</li>
-                    <li>Ancillary products purchase history</li>
-                    <li>To analyze, save and use tracked and personal date</li>
-                  </ul>  
-                </div>
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox">
-                  </label>
-                </div>
-              </th>
-              <td class = "col-md-6">
-                <h5 id = "airport-service-through-mobile"><b>Personalized Mobile Airport Service</b></h5>
-                <p>
-                When you are using Lufthansa's Mobile Application at Airport, you can easier and faster login and enjoy the benefits of Mobile Airport Service. Lufthansa's mobile application can provide customised "Next Action" recommendation under preferences, such as baby-care rooms, pray/religion rooms, lounges, ATMs, vouchers.
-                </p>
-              </td>
-              <td class = "col-md-6">
-              <h5> &nbsp</h5>
-                <div>
-                  <ul>
-                    <li>Web tracking of click behaviour</li>
-                    <li>Current booking and booking history tracking</li>
-                    <li>Location tracking (IP enabled or in -app)</li>
-                    <li>Ancillary products purchase history</li>
-                    <li>To analyze, save and use tracked and personal date</li>
-                  </ul>  
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox">
-                  </label>
-                </div>
-              </th>
-              <td class = "col-md-6">
-                <h5 id = "convinient-cash-upgrade"><b>Convinient Cash Upgrade</b></h5>
-                <p>
-                 Access to Cash Upgrade service faster. The Cash Upgrade offers are in Booking Cockpit and Pre-Flight email after your initial booking. 
-                </p>
-              </td>
-              <td class = "col-md-6">
-              <h5> &nbsp</h5>
-                <div>
-                  <ul>
-                    <li>Current booking and booking history tracking</li>
-                    <li>To analyze, save and use tracked and personal date</li>
-                  </ul>  
-                </div>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
-   
-        <h3 id = "preferences">Preferences</h3>
-        <form class="form-horizontal">
-          <div class = "row">
-
-
-            <div class = "col-md-6">
+        <form id="surveyForm" class="form-horizontal">
+        <div>
+            <div class="col-lg-5">
               <div class="form-group">
-                <label id = "dream-destination" class="control-label">Dream Destination</label>
-                <input class="form-control"  type="text" placeholder="Which city do you frequently need to visit?">
-              </div>
+                <label for="select" id = "email-frequency" class="control-label"><h4>Email frequency:</h4></label>
 
-            </div>        
-            <div class="col-md-1">
-              
-            </div>
-            <div class = "col-md-5">
-              <div class="form-group">
-                <label id = "email-frequency"class="control-label">Email Frequency</label>
                   <div class="radio">
                     <label>
                       <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
@@ -217,43 +49,427 @@
                       More than 10 times per month
                     </label>
                   </div>  
+                </div>
+
+              <div class="form-group">
+                <label for="select" id = "email-content"class="control-label"><h4>Email content:</h4></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Current flight offers
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> Fabulous competitions
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Useful travel tips
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Exclusive partner information
+                    </label><br>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                <label for="select" id = "email-time"class="control-label"><h4>Time to receive Email:</h4></label>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Anytime
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Only on business days
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                      Only on public holidays and weekends
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                      Business days, weekends and public holidays 
+                    </label>
+                  </div>  
+                </div>
+
+
+              <div class="form-group">
+                <label for="select" id = "compartments"class="control-label"><h4>Prefered compartment:</h4></label>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Economy
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios2" value="option2">
+                      Business
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios3" value="option3">
+                      Premium
+                    </label>
+                  </div> 
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="col-lg-1">
+              
+            </div>
+            <div class="col-lg-5">
+              <div class="form-group">
+                <label for="select" id = "seat-preference"class="control-label"><h4>Seat preference:</h4></label>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Window
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios2" value="option2">
+                      Middle
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios3" value="option3">
+                      Aisle
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios4" value="option4">
+                      Close from washroom
+                    </label>
+                  </div>  
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios5" value="option5">
+                      Far from washroom
+                    </label>
+                  </div>  
+                </div>
+
+
+                <div class="form-group">
+                <label id = "type-of-trips" class="control-label"><h4>Type of trips:</h4></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Ski vacation
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> Beach vacation
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> City tours
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Others <input type="text" >
+                    </label><br>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                <label id = "point-of-interests-at-airport" class="control-label"><h4>Point of interests at airports:</h4></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Pray room
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> Baby care room
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Shops
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Others <input type="text" >
+                    </label><br>
+                  </div>
+                </div>
+
+
+                <div id="homrAirport" class="form-horizontal">
+
+                  <div class="form-group">
+                    <label id = "home-airport" class="control-label"><h4>Home airports:</h4></label>
+                    <div class="row">
+                      <div class="col-md-10">
+                          <input type="text" class="form-control" name="option[]" placeholder="Your home city airports."/>
+                      </div>
+                      <div class="col-md-2">
+                          <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                      </div>                      
+                    </div>
+
+                  </div>
+
+                    <!-- The option field template containing an option field and a Remove button -->
+                    <div class="form-group hide" id="optionTemplate">
+                      <div class="row">
+                          <div class="col-md-10">
+                              <input class="form-control" type="text" name="option[]" placeholder="Your home city airports."/>
+                          </div>
+                          <div class="col-md-2">
+                              <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div id="destinationAirport" class="form-horizontal">
+
+                  <div class="form-group">
+                    <label id = "destination-airports" class="control-label"><h4>Destination Airports:</h4></label>
+                    <div class="row">
+                      <div class="col-md-10">
+                          <input type="text" class="form-control" name="option[]" placeholder="Your destination airports."/>
+                      </div>
+                      <div class="col-md-2">
+                          <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                      </div>                      
+                    </div>
+
+                  </div>
+
+                    <!-- The option field template containing an option field and a Remove button -->
+                    <div class="form-group hide" id="optionTemplate2">
+                      <div class="row">
+                          <div class="col-md-10">
+                              <input class="form-control" type="text" name="option[]" placeholder="Your destination airports."/>
+                          </div>
+                          <div class="col-md-2">
+                              <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            </div>
+            <div>
+              <div class="col-lg-8">
+            <div id="bookForm" class="form-horizontal">
+                <div class="form-group">
+                <label id = "travel-partner" class="control-label"><h4>Add Travel Partners:</h4></label>
+                <div class="row">
+                  <div class="col-xs-5">
+                    <label class="control-label">First Name</label>
+                  </div>
+                  <div class="col-xs-5">
+                    <label class="control-label">Last Name</label>
+                  </div>
+                  <div class="col-xs-2">
+                    <label class="control-label">Add</label>
+                  </div>      
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="title" placeholder="First name" />
+                  </div>
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="isbn" placeholder="Last name" />
+                  </div>
+                  <div class="col-xs-2">
+                    <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                  </div>      
+                </div>
+
 
                 </div>
 
+                <!-- The template for adding new field -->
+                <div class="form-group hide" id="bookTemplate">
+
+                <div class="row">
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="title" placeholder="First name" />
+                  </div>
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="isbn" placeholder="Last name" />
+                  </div>
+                  <div class="col-xs-2">
+                    <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                  </div>      
+                </div>
+
+                </div>
             </div>
 
 
-          </div>
-          <div class="form-group" align="right">
-            <div>
-              <button type="reset" class="btn btn-lg btn-default">Cancel</button>
-              <button type="submit" class="btn btn-lg btn-primary">Save</button>
+
+            <div id="bookForm2" class="form-horizontal">
+                <div class="form-group">
+                <label id = "dream-destination" class="control-label"><h4>Dream destination:</h4></label>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <label class="control-label">Country</label>
+                  </div>
+                  <div class="col-xs-4">
+                    <label class="control-label">City</label>
+                  </div>
+                  <div class="col-xs-3">
+                    <label class="control-label">Time</label>
+                  </div>
+                  <div class="col-xs-1">
+                    <label class="control-label">Add</label>
+                  </div>      
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="title" placeholder="Country" />
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="isbn" placeholder="City" />
+                  </div>
+                  <div class="col-xs-3">
+                    <input type="text" class="form-control" name="price" placeholder="Time" />
+                  </div>
+                  <div class="col-xs-1">
+                    <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                  </div>      
+                </div>
+
+
+                </div>
+
+                <!-- The template for adding new field -->
+                <div class="form-group hide" id="bookTemplate2">
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="title" placeholder="Country" />
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="isbn" placeholder="City" />
+                  </div>
+                  <div class="col-xs-3">
+                    <input type="text" class="form-control" name="price" placeholder="Time" />
+                  </div>
+
+                  <div class="col-xs-1">
+                    <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                  </div>      
+                </div>
+
+                </div>
             </div>
-          </div>
+
+
+                <div class="form-group">
+                  <label id = "meal-preference" for="select" class="control-label"><h4>Meal preference:</h4></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> <b>Diabetic diet</b>: No sugar, little fat, no battered or breaded products, no alcohol.
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> <b>Gluten free food</b>: When incompatibility to gluten (gluten protein): the usage of gluten free flours.
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> <b>Reduction food</b>: Calorie-reduced meals, rich on dietary fibre, low on fat and carbohydrates.
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> <b>Low cholesterol food</b>: Less than 100 mg cholesterol, no animal fats, no egg yolk.
+                    </label><br>
+
+                    <label>
+                      <input type="checkbox"> <b>Low sodium food</b>: For cardiovascular and kidney problems: cooking salt free, low fat, non-flatulent, without alcohol.
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> <b>Lactose free food</b>: For lactose or milk incompatibility.
+                    </label><br>                    
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian meal (Western)</b>: No meat or fish products, without alcohol, no dairy products and eggs.
+                    </label><br> 
+
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian meal (Lacto-Ovo)</b>: Meal without meat (although dairy products and eggs are allowed)
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian asian meal (Indian)</b>: Meal without meat prepared and spiced Indian style.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian meal (Oriental)</b>: Meal without meat or fish, prepared and spiced in an oriental style. Please order this menu via the Lufthansa Service Centre only.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Fruit meal</b>: Meal made with fruit (raw and fresh fruit, without meat).
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Light whole food</b>: Light diet for the stomach, bowel, liver, gall.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"><b> Meal without fish</b>: Contains no seafood, mussels or similar products.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Kosher meal</b>: Strictly kosher food prepared under the supervision of a rabbinate.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Muslim meal</b>: No use of pork, no venison and no alcohol used. Usage of halal standard certified meat- and poultry products exclusively.
+                    </label><br> 
+
+                 </div>
+                </div>
+
+                  <div class="col-lg-offset-8 col-md-4 " align="center">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                  </div>
+              </div>
+              <div class="col-lg-4"></div>
+    
+
+
+            </div>
+
+          
         </form>
+
+
       </div>
 
 
     </div>
-    <div class = "col-md-3" role = "complementary">
+    <div class = "col-lg-3" role = "complementary">
       <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
         <ul class="nav bs-docs-sidenav">
-                
           <li>
-            <a href="#benefits-and-permissions">Benefits and Permissions</a>
+            <a href="#preferences">Preference</a>
             <ul class="nav">
-              <li><a href="#personalized-email">Personalized Email</a></li>
-              <li><a href="#personalized-cockpit-booking">Personalized Cockpit Booking</a></li>
-              <li><a href="#personalized-homepage">Personalized Homepage</a></li>
-              <li><a href="#airport-service-through-mobile">Airport Service Through Mobile</a></li>
-              <li><a href="#convinient-cash-upgrade">Convinient Cash Upgrade</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#preference">Preference</a>
-            <ul class="nav">
+              <li><a href="#email-frequency">Email frequency</a></li>
+              <li><a href="#email-content">Email content</a></li>
+              <li><a href="#email-time">Time to receive Email</a></li>
+              <li><a href="#compartments">Compartments</a></li>
+              <li><a href="#seat-preference">Seat preference</a></li>
+              <li><a href="#type-of-trips">Type of trips</a></li>
+              <li><a href="#point-of-interests-at-airport">Point of interest at aiport</a></li>
+
+              <li><a href="#home-airport">Home airport</a></li>
+              <li><a href="#destination-airports">Destination airports</a></li>
+              <li><a href="#travel-partner">Add travel partners</a></li>
+
               <li><a href="#dream-destination">Dream Destination</a></li>
-              <li><a href="#email-frequency">Email Frequency</a></li>
+              <li><a href="#meal-preference">Meal preference</a></li>
+
             </ul>
           </li>
 
@@ -274,4 +490,8 @@
 
   </div>
 </div>
+<br>
+<br>
+<br>
+
 {% endblock %}

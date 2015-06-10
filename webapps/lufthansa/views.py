@@ -12,9 +12,19 @@ def registration_medium(request):
 def registration_high(request):
     html = "registration-high.html"
     return render(request, html, {})
+
 def registration_mixed(request):
     html = "registration-mixed.html"
     return render(request, html, {})
+
 def preference_panel(request):
     html = "preference-panel.html"
     return render(request, html, {})
+
+def permission_preference_panel(request):
+    html = "permission-preference-panel.html"
+    return render(request, html, {})
+    
+# def tmp(request):
+#     html = "tmp.html"
+#     return render(request, html, {})
