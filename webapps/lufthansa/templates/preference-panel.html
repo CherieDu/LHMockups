@@ -6,7 +6,8 @@
 {% block main%}
 <div class="container bs-docs-container">
   <div class = "row">
-
+<br>
+<br>
     <div class = "col-lg-9" role = "main">
       <div class="bs-docs-section">
         <h2>
@@ -74,25 +75,25 @@
 
                   <div class="radio">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      <input type="radio" name="emailtime" id="optionsRadios1" value="option1" checked="">
                       Anytime
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      <input type="radio" name="emailtime" id="optionsRadios2" value="option2">
                       Only on business days
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                      <input type="radio" name="emailtime" id="optionsRadios3" value="option3">
                       Only on public holidays and weekends
                     </label>
                   </div>
                   <div class="radio">
                     <label>
-                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                      <input type="radio" name="emailtime" id="optionsRadios4" value="option4">
                       Business days, weekends and public holidays 
                     </label>
                   </div>  
@@ -210,10 +211,10 @@
                   <div class="form-group">
                     <label id = "home-airport" class="control-label"><h4>Home airports:</h4></label>
                     <div class="row">
-                      <div class="col-md-10">
+                      <div class="col-xs-10">
                           <input type="text" class="form-control" name="option[]" placeholder="Your home city airports."/>
                       </div>
-                      <div class="col-md-2">
+                      <div class="col-xs-2">
                           <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
                       </div>                      
                     </div>
@@ -223,10 +224,10 @@
                     <!-- The option field template containing an option field and a Remove button -->
                     <div class="form-group hide" id="optionTemplate">
                       <div class="row">
-                          <div class="col-md-10">
+                          <div class="col-xs-10">
                               <input class="form-control" type="text" name="option[]" placeholder="Your home city airports."/>
                           </div>
-                          <div class="col-md-2">
+                          <div class="col-xs-2">
                               <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
                           </div>
                       </div>
@@ -239,10 +240,10 @@
                   <div class="form-group">
                     <label id = "destination-airports" class="control-label"><h4>Destination Airports:</h4></label>
                     <div class="row">
-                      <div class="col-md-10">
+                      <div class="col-xs-10">
                           <input type="text" class="form-control" name="option[]" placeholder="Your destination airports."/>
                       </div>
-                      <div class="col-md-2">
+                      <div class="col-xs-2">
                           <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
                       </div>                      
                     </div>
@@ -252,10 +253,10 @@
                     <!-- The option field template containing an option field and a Remove button -->
                     <div class="form-group hide" id="optionTemplate2">
                       <div class="row">
-                          <div class="col-md-10">
+                          <div class="col-xs-10">
                               <input class="form-control" type="text" name="option[]" placeholder="Your destination airports."/>
                           </div>
-                          <div class="col-md-2">
+                          <div class="col-xs-2">
                               <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
                           </div>
                       </div>
@@ -431,9 +432,7 @@
                  </div>
                 </div>
 
-                  <div class="col-lg-offset-8 col-md-4 " align="center">
-                    <button type="submit" class="btn btn-primary">Save</button>
-                  </div>
+
               </div>
               <div class="col-lg-4"></div>
     
