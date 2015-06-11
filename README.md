@@ -6,3 +6,6 @@ Django 1.7 version or later
 
 To run this web app, go to "webapps/".
 Through the terminal, type: "python manage.py runserver".
+
+
+In the "mockups/templates", there are static mockups(open without Django).
