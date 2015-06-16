@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Diabetic diet",
+        "explanation": "No sugar, little fat, no battered or breaded products, no alcohol"
+    },
+    {
+        "name": "Gluten free food",
+        "explanation": "When incompatibility to gluten (gluten protein): the usage of gluten free flours"
+    },
+    {
+        "name": "Reduction food",
+        "explanation": "Calorie-reduced meals, rich on dietary fibre, low on fat and carbohydrates"
+    },
+    {
+        "name": "Low cholesterol food",
+        "explanation": "Less than 100 mg cholesterol, no animal fats, no egg yolk"
+    },
+    {
+        "name": "Low sodium food",
+        "explanation": "For cardiovascular and kidney problems: cooking salt free, low fat, non-flatulent, without alcohol"
+    },
+    {
+        "name": "Lactose free food",
+        "explanation": "For lactose or milk incompatibility"
+    },
+    {
+        "name": "Vegetarian meal (Western)",
+        "explanation": "No meat or fish products, without alcohol, no dairy products and eggs"
+    },
+    {
+        "name": "Vegetarian meal (Lacto-Ovo)",
+        "explanation": "Meal without meat (although dairy products and eggs are allowed)"
+    },
+    {
+        "name": "Vegetarian asian meal (Indian)",
+        "explanation": "Meal without meat prepared and spiced Indian style"
+    },
+    {
+        "name": "Vegetarian meal (Oriental)",
+        "explanation": "Meal without meat or fish, prepared and spiced in an oriental style. Please order this menu via the Lufthansa Service Centre only."
+    },
+    {
+        "name": "Fruit meal",
+        "explanation": "Meal made with fruit (raw and fresh fruit, without meat)"
+    },
+    {
+        "name": "Light whole food",
+        "explanation": "Light diet for the stomach, bowel, liver, gall"
+    },
+    {
+        "name": "Meal without fish",
+        "explanation": "Contains no seafood, mussels or similar products"
+    },
+    {
+        "name": "Kosher meal",
+        "explanation": "Strictly kosher food prepared under the supervision of a rabbinate"
+    },
+    {
+        "name": "Muslim meal",
+        "explanation": "No use of pork, no venison and no alcohol used. Usage of halal standard certified meat- and poultry products exclusively."
+    }
+]

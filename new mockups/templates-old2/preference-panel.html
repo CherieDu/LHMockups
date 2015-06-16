@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Preference Panel</title>
+<link rel="stylesheet" href="../static/bootstrap.min.css">
+<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">  <!-- Bootstrap CSS v3.0.0 or higher -->
+
+<link href="jumbotron-narrow.css" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="../static/bootstrap-3.3.4/dist/css/bootstrap.min.css">
+ -->
+<!-- FormValidation CSS file -->
+<link rel="stylesheet" href="../static/formvalidation-dist-v0.6.3/dist/css/formValidation.min.css">
+<link rel="stylesheet" href="../static/formvalidation-dist-v0.6.3/dist/css/formValidation.css">
+<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ -->
+<!-- jQuery v1.9.1 or higher -->
+<script type="text/javascript" src="../static/bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="../static/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+
+<!-- FormValidation plugin and the class supports validating Bootstrap form -->
+<script src="../static/formvalidation-dist-v0.6.3/dist/js/formValidation.min.js"></script>
+<script src="../static/formvalidation-dist-v0.6.3/dist/js/formValidation.js"></script>
+<script src="../static/formvalidation-dist-v0.6.3/dist/js/formValidation.popular.js"></script>
+<script src="../static/formvalidation-dist-v0.6.3/dist/js/formValidation.popular.min.js"></script>
+<script src="../static/formvalidation-dist-v0.6.3/dist/js/framework/bootstrap.min.js"></script>
+<script src="../static/formvalidation-dist-v0.6.3/dist/js/framework/bootstrap.js"></script>
+
+<script type="text/javascript" src="../static/myfiles/js/addInput.js"></script>
+<script type="text/javascript" src="../static/myfiles/js/addInput2.js"></script>
+<script type="text/javascript" src="../static/myfiles/js/addInput3.js"></script>
+<script type="text/javascript" src="../static/myfiles/js/addInput4.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container bs-docs-container">
+  <div class = "row">
+<br>
+
+<br>
+    <div class = "col-md-9" role = "main">
+      <div class="bs-docs-section">
+        <h2>
+          Get the best flight experience by setting up your preferences.
+        </h2>
+
+        <form id="surveyForm" class="form-horizontal">
+        <div>
+            <div class="col-lg-5">
+              <div class="form-group">
+                <label for="select" id = "email-frequency" class="control-label"><h4>Email frequency:</h4></label>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Never
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      Once per month
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                      Once a week
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                      Twice a week
+                    </label>
+                  </div>  
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios5" value="option5">
+                      Three times a week
+                    </label>
+                  </div>  
+                </div>
+
+              <div class="form-group">
+                <label for="select" id = "email-content"class="control-label"><h4>Email content:</h4></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Discounts on flights
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> Useful travel tips
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Exclusive offers from our partners
+                    </label><br>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                <label for="select" id = "email-time"class="control-label"><h4>Time to receive Email:</h4></label>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="emailtime" id="optionsRadios1" value="option1" checked="">
+                      Anytime
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="emailtime" id="optionsRadios2" value="option2">
+                      Only on business days
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="emailtime" id="optionsRadios3" value="option3">
+                      Only on public holidays and weekends
+                    </label>
+                  </div>
+                </div>
+
+
+              <div class="form-group">
+                <label for="select" id = "compartments"class="control-label"><h4>Prefered compartment:</h4></label>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Economy
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios2" value="option2">
+                      Business
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios3" value="option3">
+                      Premium
+                    </label>
+                  </div> 
+                </div>
+            </div>
+            <div class="col-lg-1">
+              
+            </div>
+            <div class="col-lg-5">
+              <div class="form-group">
+                <label for="select" id = "seat-preference"class="control-label"><h4>Seat preference:</h4></label>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Window
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios2" value="option2">
+                      Middle
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios3" value="option3">
+                      Aisle
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios4" value="option4">
+                      Close to washroom
+                    </label>
+                  </div>  
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="seatOptionsRadios" id="optionsRadios5" value="option5">
+                      Far from washroom
+                    </label>
+                  </div>  
+                </div>
+
+
+                <div class="form-group">
+                <label id = "type-of-trips" class="control-label"><h4>Type of trip:</h4></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Ski vacation
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> Beach vacation
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> City tours
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Others <input type="text" >
+                    </label><br>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                <label id = "point-of-interests-at-airport" class="control-label"><h4>Points of interest at airports:</h4></label>
+                <div>Accessible via our Mobile Service</div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Prayer room
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> Baby care room
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Shops
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> Others <input type="text" >
+                    </label><br>
+                  </div>
+                </div>
+
+
+                <div id="homrAirport" class="form-horizontal">
+
+                  <div class="form-group">
+                    <label id = "home-airport" class="control-label"><h4>Home airports:</h4></label>
+                    <div class="row">
+                      <div class="col-xs-10">
+                          <input type="text" class="form-control" name="option[]" placeholder="Your home city airports."/>
+                      </div>
+                      <div class="col-xs-2">
+                          <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                      </div>                      
+                    </div>
+
+                  </div>
+
+                    <!-- The option field template containing an option field and a Remove button -->
+                    <div class="form-group hide" id="optionTemplate">
+                      <div class="row">
+                          <div class="col-xs-10">
+                              <input class="form-control" type="text" name="option[]" placeholder="Your home city airports."/>
+                          </div>
+                          <div class="col-xs-2">
+                              <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div id="destinationAirport" class="form-horizontal">
+
+                  <div class="form-group">
+                    <label id = "destination-airports" class="control-label"><h4>Destination Airports:</h4></label>
+                    <div class="row">
+                      <div class="col-xs-10">
+                          <input type="text" class="form-control" name="option[]" placeholder="Your destination airports."/>
+                      </div>
+                      <div class="col-xs-2">
+                          <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                      </div>                      
+                    </div>
+
+                  </div>
+
+                    <!-- The option field template containing an option field and a Remove button -->
+                    <div class="form-group hide" id="optionTemplate2">
+                      <div class="row">
+                          <div class="col-xs-10">
+                              <input class="form-control" type="text" name="option[]" placeholder="Your destination airports."/>
+                          </div>
+                          <div class="col-xs-2">
+                              <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            </div>
+            <div>
+              <div class="col-lg-8">
+            <div id="bookForm" class="form-horizontal">
+                <div class="form-group">
+                <label id = "travel-partner" class="control-label"><h4>Add travel companions:</h4></label>
+                <div class="row">
+                  <div class="col-xs-5">
+                    <label class="control-label">First Name</label>
+                  </div>
+                  <div class="col-xs-5">
+                    <label class="control-label">Last Name</label>
+                  </div>
+                  <div class="col-xs-2">
+                    <label class="control-label">Add</label>
+                  </div>      
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="title" placeholder="First name" />
+                  </div>
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="isbn" placeholder="Last name" />
+                  </div>
+                  <div class="col-xs-2">
+                    <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                  </div>      
+                </div>
+
+
+                </div>
+
+                <!-- The template for adding new field -->
+                <div class="form-group hide" id="bookTemplate">
+
+                <div class="row">
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="title" placeholder="First name" />
+                  </div>
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" name="isbn" placeholder="Last name" />
+                  </div>
+                  <div class="col-xs-2">
+                    <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                  </div>      
+                </div>
+
+                </div>
+            </div>
+
+
+
+            <div id="bookForm2" class="form-horizontal">
+                <div class="form-group">
+                <label id = "dream-destination" class="control-label"><h4>Dream destination:</h4></label>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <label class="control-label">Country</label>
+                  </div>
+                  <div class="col-xs-4">
+                    <label class="control-label">City</label>
+                  </div>
+                  <div class="col-xs-3">
+                    <label class="control-label">Time</label>
+                  </div>
+                  <div class="col-xs-1">
+                    <label class="control-label">Add</label>
+                  </div>      
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="title" placeholder="Country" />
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="isbn" placeholder="City" />
+                  </div>
+                  <div class="col-xs-3">
+                    <input type="text" class="form-control" name="price" placeholder="Time" />
+                  </div>
+                  <div class="col-xs-1">
+                    <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                  </div>      
+                </div>
+
+
+                </div>
+
+                <!-- The template for adding new field -->
+                <div class="form-group hide" id="bookTemplate2">
+
+                <div class="row">
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="title" placeholder="Country" />
+                  </div>
+                  <div class="col-xs-4">
+                    <input type="text" class="form-control" name="isbn" placeholder="City" />
+                  </div>
+                  <div class="col-xs-3">
+                    <input type="text" class="form-control" name="price" placeholder="Time" />
+                  </div>
+
+                  <div class="col-xs-1">
+                    <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                  </div>      
+                </div>
+
+                </div>
+            </div>
+
+
+                <div class="form-group">
+                  <label id = "meal-preference" for="select" class="control-label"><h4>Meal preference:</h4></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> <b>Diabetic diet</b>: No sugar, little fat, no battered or breaded products, no alcohol.
+                    </label> <br>
+                    <label>
+                      <input type="checkbox"> <b>Gluten free food</b>: When incompatibility to gluten (gluten protein): the usage of gluten free flours.
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> <b>Reduction food</b>: Calorie-reduced meals, rich on dietary fibre, low on fat and carbohydrates.
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> <b>Low cholesterol food</b>: Less than 100 mg cholesterol, no animal fats, no egg yolk.
+                    </label><br>
+
+                    <label>
+                      <input type="checkbox"> <b>Low sodium food</b>: For cardiovascular and kidney problems: cooking salt free, low fat, non-flatulent, without alcohol.
+                    </label><br>
+                    <label>
+                      <input type="checkbox"> <b>Lactose free food</b>: For lactose or milk incompatibility.
+                    </label><br>                    
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian meal (Western)</b>: No meat or fish products, without alcohol, no dairy products and eggs.
+                    </label><br> 
+
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian meal (Lacto-Ovo)</b>: Meal without meat (although dairy products and eggs are allowed)
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian asian meal (Indian)</b>: Meal without meat prepared and spiced Indian style.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Vegetarian meal (Oriental)</b>: Meal without meat or fish, prepared and spiced in an oriental style. Please order this menu via the Lufthansa Service Centre only.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Fruit meal</b>: Meal made with fruit (raw and fresh fruit, without meat).
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Light whole food</b>: Light diet for the stomach, bowel, liver, gall.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"><b> Meal without fish</b>: Contains no seafood, mussels or similar products.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Kosher meal</b>: Strictly kosher food prepared under the supervision of a rabbinate.
+                    </label><br> 
+                    <label>
+                      <input type="checkbox"> <b>Muslim meal</b>: No use of pork, no venison and no alcohol used. Usage of halal standard certified meat- and poultry products exclusively.
+                    </label><br> 
+
+                 </div>
+                </div>
+
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+        </form>
+
+
+      </div>
+
+
+    </div>
+    <div class = "col-md-3" role = "complementary">
+      <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+        <ul class="nav bs-docs-sidenav">
+          <li>
+            <a href="#preferences">Preference</a>
+            <ul class="nav">
+              <li><a href="#email-frequency">Email frequency</a></li>
+              <li><a href="#email-content">Email content</a></li>
+              <li><a href="#email-time">Time to receive Email</a></li>
+              <li><a href="#compartments">Compartments</a></li>
+              <li><a href="#seat-preference">Seat preference</a></li>
+              <li><a href="#type-of-trips">Type of trips</a></li>
+              <li><a href="#point-of-interests-at-airport">Point of interest at aiport</a></li>
+
+              <li><a href="#home-airport">Home airport</a></li>
+              <li><a href="#destination-airports">Destination airports</a></li>
+              <li><a href="#travel-partner">Add travel companions</a></li>
+
+              <li><a href="#dream-destination">Dream Destination</a></li>
+              <li><a href="#meal-preference">Meal preference</a></li>
+
+            </ul>
+          </li>
+
+        </ul>
+        <a class="back-to-top" href="#top">
+          Back to top
+        </a>
+        
+        <a href="#" class="bs-docs-theme-toggle" role="button">
+          Preview theme
+        </a>
+        
+      </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+</body>
+</html>
