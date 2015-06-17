@@ -8,4 +8,4 @@ To run this web app, go to "webapps/".
 Through the terminal, type: "python manage.py runserver".
 
 
-In the "mockups/templates", there are static mockups(open without Django).
+The most up to date version of mockups are at "new mockups/templates"
