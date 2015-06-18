@@ -103,7 +103,7 @@
               <div class="form-group">
                 <label for="select" id = "email-content"class="control-label"><h4>Email content:</h4></label>
                 <p>
-                Based on your preferences and customer experience history we will send you personalized and specially designed for you offers from EUair and partners (including ancillary products) to match your needs, discounts on flights will include current fare alerts, useful travel tips will navigate and support you over your journey - guys, you are welcome to improve my wording so it fits to the page.
+                Based on your preferences and customer experience history we will send you personalized and specially designed for you offers from EUair and partners (including ancillary products) to match your needs, discounts on flights will include current fare alerts, useful travel tips will navigate and support you over your journey.
                 </p>
                   <div class="checkbox">
                     <label>
@@ -125,7 +125,7 @@
               <div class="form-group">
                 <label for="select" id = "email-time"class="control-label"><h4>Time to receive Email:</h4></label>
                 <p>
-                  We will respect your preference regarding the time. If you name none, we will send emails on both business days and weekends, including public holidays. Please note that “the daytime“ of emails is a result of EUair Analytics, which is based on your email behavior.
+                  We will respect your preference regarding the time. If you name none, we will send emails on both business days and weekends, including public holidays. Please note that "the daytime" of emails is a result of EUair Analytics, which is based on your email behavior.
                 </p>
                   <div class="radio">
                     <label>
@@ -177,7 +177,7 @@
                   <div class="radio">
                     <label>
                       <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios3" value="option3">
-                      Premium
+                      First Class
                     </label>
                   </div> 
                 </div>
@@ -267,9 +267,9 @@
                 <div id="homrAirport" class="form-horizontal">
 
                   <div class="form-group">
-                    <label id = "home-airport" class="control-label"><h4>Home/destination airports:</h4></label>
+                    <label id = "home-airport" class="control-label"><h4>Home airports:</h4></label>
                     <p>
-                      The first chosen airport will be a default airport in your booking process; you will be able to easily change it during the process. If we notice that you more often fly from another airport, we will change it for you, the same for destination airport.
+                      The first chosen airport will be a default airport in your booking process; you will be able to easily change it during the process. If we notice that you more often fly from another airport, we will change it for you.
                     </p>
                     <div class="row">
                       <div class="col-xs-10">
@@ -295,6 +295,42 @@
                     </div>
                 </div>
 
+
+                <div id="destinationAirport" class="form-horizontal">
+
+                  <div class="form-group">
+                    <label id = "destination-airports" class="control-label"><h4>Destination Airports:</h4></label>
+
+                    <p>
+                      The first chosen airport will be a default airport in your booking process; you will be able to easily change it during the process. If we notice that you more often fly from another airport, we will change it for you.
+                    </p>
+
+                    <div class="row">
+                      <div class="col-xs-10">
+                          <input type="text" class="form-control" name="option[]" placeholder="Your destination airports."/>
+                      </div>
+                      <div class="col-xs-2">
+                          <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                      </div>                      
+                    </div>
+
+                  </div>
+
+                    <!-- The option field template containing an option field and a Remove button -->
+                    <div class="form-group hide" id="optionTemplate2">
+                      <div class="row">
+                          <div class="col-xs-10">
+                              <input class="form-control" type="text" name="option[]" placeholder="Your destination airports."/>
+                          </div>
+                          <div class="col-xs-2">
+                              <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+
+
             </div>
             
             </div>
@@ -304,7 +340,7 @@
                 <div class="form-group">
                 <label id = "travel-partner" class="control-label"><h4>Add travel companions:</h4></label>
                 <p>
-                  Your travel companions information will be displayed in your booking process. This will easy your booking process, if you want to book more than one ticket.
+                  Your travel companions information will be displayed in your booking process. This will make your booking process easier, if you want to book more than one ticket.
                 </p>
                 <div class="row">
                   <div class="col-xs-5">
@@ -423,9 +459,6 @@
                     <p>
                     Special meals can be ordered up to 24 hours before departure, provided that there is a confirmed booking in the required class. You have the opportunity to order a special meal through your travel agent or online under <a href="">My Bookings</a>. There will be <b>no additional costs</b> for the passenger for this service. 
                     </p>
-                    <p>
-                      Please note that special meals are usually offered in Economy Class on flights of more than 185 minutes duration and in Business Class on flights of more than 75 minutes duration.
-                  </p>
                   <div class="checkbox">
                     <label>
                       <input type="checkbox"> <b>Diabetic diet</b>: No sugar, little fat, no battered or breaded products, no alcohol.
@@ -502,7 +535,8 @@
               <li><a href="#type-of-trips">Trip types</a></li>
               <li><a href="#point-of-interests-at-airport">Point of interest at aiport</a></li>
 
-              <li><a href="#home-airport">Home/destination airport</a></li>
+              <li><a href="#home-airport">Home airport</a></li>
+              <li><a href="#destination-airports">Destination airports</a></li>
               <li><a href="#travel-partner">Add travel companions</a></li>
 
               <li><a href="#dream-destination">Dream Destination</a></li>

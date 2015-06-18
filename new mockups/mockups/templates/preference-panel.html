@@ -169,7 +169,7 @@
                   <div class="radio">
                     <label>
                       <input type="radio" name="compartmentsOptionsRadios" id="optionsRadios3" value="option3">
-                      Premium
+                      First Class
                     </label>
                   </div> 
                 </div>
@@ -255,7 +255,7 @@
                 <div id="homrAirport" class="form-horizontal">
 
                   <div class="form-group">
-                    <label id = "home-airport" class="control-label"><h4>Home/destination airports:</h4></label>
+                    <label id = "home-airport" class="control-label"><h4>Home airports:</h4></label>
                     <div class="row">
                       <div class="col-xs-10">
                           <input type="text" class="form-control" name="option[]" placeholder="Your home city airports."/>
@@ -279,6 +279,37 @@
                       </div>
                     </div>
                 </div>
+
+
+                <div id="destinationAirport" class="form-horizontal">
+
+                  <div class="form-group">
+                    <label id = "destination-airports" class="control-label"><h4>Destination Airports:</h4></label>
+                    <div class="row">
+                      <div class="col-xs-10">
+                          <input type="text" class="form-control" name="option[]" placeholder="Your destination airports."/>
+                      </div>
+                      <div class="col-xs-2">
+                          <button type="button" class="btn btn-default addButton"><i class="fa fa-plus"></i></button>
+                      </div>                      
+                    </div>
+
+                  </div>
+
+                    <!-- The option field template containing an option field and a Remove button -->
+                    <div class="form-group hide" id="optionTemplate2">
+                      <div class="row">
+                          <div class="col-xs-10">
+                              <input class="form-control" type="text" name="option[]" placeholder="Your destination airports."/>
+                          </div>
+                          <div class="col-xs-2">
+                              <button type="button" class="btn btn-default removeButton"><i class="fa fa-minus"></i></button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+
 
             </div>
             
@@ -472,7 +503,8 @@
               <li><a href="#type-of-trips">Type of trips</a></li>
               <li><a href="#point-of-interests-at-airport">Point of interest at aiport</a></li>
 
-              <li><a href="#home-airport">Home/destination airport</a></li>
+              <li><a href="#home-airport">Home airport</a></li>
+              <li><a href="#destination-airports">Destination airports</a></li>
               <li><a href="#travel-partner">Add travel companions</a></li>
 
               <li><a href="#dream-destination">Dream Destination</a></li>
