@@ -8,4 +8,4 @@ To run this web app, go to "webapps/".
 Through the terminal, type: "python manage.py runserver".
 
 
-The most up to date version of mockups are at "new mockups/templates"
+The most up to date version of mockups are at "new mockups/mockups/templates"
